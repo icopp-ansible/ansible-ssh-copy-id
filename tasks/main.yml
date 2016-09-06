@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable ssh-copy-id via Homebrew
+  package:
+    name: ssh-copy-id
+    state: latest
+  when: ansible_os_family == "Darwin"
